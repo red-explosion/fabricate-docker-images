@@ -13,6 +13,8 @@ COPY --from=node /usr/local/bin /usr/local/bin
 # RUN npm install -g yarn --force
 # RUN npm install -g bun
 
+RUN npm config set cache /fabricate/.npm --global
+
 COPY docker-entrypoint /usr/local/bin/docker-entrypoint
 RUN chmod +x /usr/local/bin/docker-entrypoint
 
