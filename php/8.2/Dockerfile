@@ -1,5 +1,5 @@
-FROM node:18-alpine AS node
-FROM composer:2.6
+FROM docker.io/node:18-alpine AS node
+FROM docker.io/composer:2.6
 
 LABEL maintainer="Red Explosion"
 
